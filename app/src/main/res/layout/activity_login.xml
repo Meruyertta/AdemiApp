@@ -114,10 +114,12 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/titilliumwebregular"
                 android:layout_marginTop="50dp"
-                android:text="Don't have an account?"
+                android:text="ALready have an account?"
                 android:textColor="@color/white"
                 android:textSize="15sp"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:onClick="register"
+                />
         </LinearLayout>
 
 

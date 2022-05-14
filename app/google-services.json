@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "304463203520",
+    "project_id": "tynda-ad0b0",
+    "storage_bucket": "tynda-ad0b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304463203520:android:a06f027dc3754d4f933125",
+        "android_client_info": {
+          "package_name": "com.example.musicapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304463203520-2se6h67qqe8bfotmfrkeosra80k6jit9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS7yfbMUHWguYW0TTUBIFuKcxl00albvk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304463203520-2se6h67qqe8bfotmfrkeosra80k6jit9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -97,10 +97,12 @@
             android:layout_height="52dp"
             android:text="@string/signUp"
             android:textStyle="bold"
-            android:onClick="gotohome"
             android:background="@drawable/buttonred_corner"
             android:textColor="@color/white"
-            android:fontFamily="@font/josefinsanslight"/>
+            android:fontFamily="@font/josefinsanslight"
+            />
+<!--            android:onClick="gotohome"-->
+
 
         <TextView
             android:id="@+id/textView"

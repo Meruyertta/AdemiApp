@@ -6,12 +6,20 @@
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/buttonred_corner.xml" value="0.2475" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/buttonwhite_corner.xml" value="0.2475" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/fontwhite.xml" value="0.104" />
+        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/ic_akar_icons_home.xml" value="0.1845" />
+        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/ic_carbon_search_locate.xml" value="0.1845" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/images.xml" value="0.2475" />
+        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/item_selector.xml" value="0.1845" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/login_shape.xml" value="0.2475" />
-        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/activity_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/navbar.xml" value="0.1845" />
+        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/activity_main.xml" value="0.21784420289855072" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/activity_register.xml" value="0.21784420289855072" />
+        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/fragment_cart.xml" value="0.17395833333333333" />
+        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/fragment_category.xml" value="0.17395833333333333" />
+        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/fragment_home.xml" value="0.18802083333333333" />
+        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/menu/navbar_item_menu.xml" value="0.17604166666666668" />
       </map>
     </option>
   </component>

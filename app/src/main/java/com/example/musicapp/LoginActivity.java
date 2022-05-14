@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -28,9 +29,9 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth=FirebaseAuth.getInstance();
 
-//        if(mAuth.getCurrentUser()!=null){
-//            finish();
-//        }
+        if(mAuth.getCurrentUser()!=null){
+            finish();
+        }
 
         Button btnRegister = findViewById(R.id.sign_in);
         btnRegister.setOnClickListener(new View.OnClickListener(){
@@ -83,5 +84,6 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), RegisterActivity.class);
         startActivity(intent);
     }
+
 
 }

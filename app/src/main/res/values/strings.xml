@@ -14,4 +14,5 @@
     <string name="account">an account</string>
     <string name="prompt_name">Your Name</string>
     <string name="name">Name:</string>
+    <string name="signUp">Sign Up</string>
 </resources>

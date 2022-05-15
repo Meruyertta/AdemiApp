@@ -1,4 +1,4 @@
-package com.example.musicapp;
+package com.example.musicapp.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.musicapp.R;
 import com.example.musicapp.fragments.CartFragment;
 import com.example.musicapp.fragments.CategoryFragment;
 import com.example.musicapp.fragments.HomeFragment;
@@ -23,6 +24,7 @@ public class HomeActivity extends AppCompatActivity {
 
        navigationView = findViewById(R.id.bottom_navigation);
         navigationView.setOnNavigationItemSelectedListener(navListener);
+
 
 
     }

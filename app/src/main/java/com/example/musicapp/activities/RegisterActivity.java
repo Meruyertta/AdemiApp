@@ -1,4 +1,4 @@
-package com.example.musicapp;
+package com.example.musicapp.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,11 +11,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.musicapp.R;
+import com.example.musicapp.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -102,7 +103,7 @@ public class RegisterActivity extends AppCompatActivity {
 //    }
 
     private void showLoginActivity() {
-        Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
+        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
         startActivity(intent);
         finish();
     }

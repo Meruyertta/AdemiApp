@@ -15,6 +15,11 @@
     <string name="prompt_name">Your Name</string>
     <string name="name">Name:</string>
     <string name="signUp">Sign Up</string>
+
+    <string name="productDetailName">Ankle-length Pants</string>
+    <string name="productCategoryName">Conscious choice</string>
+    <string name="productPrice">$29.99</string>
+    <string name="Lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod diam in condimentum suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

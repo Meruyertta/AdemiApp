@@ -2,6 +2,7 @@ package com.example.musicapp.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import com.example.musicapp.fragments.CartFragment;
 import com.example.musicapp.fragments.CategoryFragment;
 import com.example.musicapp.fragments.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.yarolegovich.slidingrootnav.SlidingRootNavBuilder;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -24,6 +26,16 @@ public class HomeActivity extends AppCompatActivity {
 
        navigationView = findViewById(R.id.bottom_navigation);
         navigationView.setOnNavigationItemSelectedListener(navListener);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.tool_bar);
+        setSupportActionBar(toolbar);
+
+        new SlidingRootNavBuilder(this)
+                .withToolbarMenuToggle(toolbar)
+                .withMenuOpened(false)
+                .withMenuLayout(R.layout.menu_left_drawer)
+                .inject();
+
 
 
 

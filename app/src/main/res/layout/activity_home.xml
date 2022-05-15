@@ -17,14 +17,22 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/tool_bar"
+            app:titleTextColor="@color/white"
+            app:navigationIcon="@drawable/ic_drawer" />
+
         <TextView
             android:id="@+id/project"
             android:layout_width="match_parent"
             android:layout_height="42dp"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="26dp"
+            android:layout_marginLeft="46dp"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="42dp"
+            android:layout_marginTop="52dp"
             android:text="@string/project"
             android:fontFamily="@font/gideon_roman"
             android:textSize="25sp"

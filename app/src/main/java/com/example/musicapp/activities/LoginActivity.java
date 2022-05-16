@@ -29,9 +29,10 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth=FirebaseAuth.getInstance();
 
-        if(mAuth.getCurrentUser()!=null){
-            finish();
-        }
+//        if(mAuth.getCurrentUser()!=null){
+//            finish();
+//            return;
+//        }
 
         Button btnRegister = findViewById(R.id.sign_in);
         btnRegister.setOnClickListener(new View.OnClickListener(){
@@ -61,9 +62,10 @@ public class LoginActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d("success" ,"signInWithEmail:success");
+
                             Toast.makeText(LoginActivity.this, "Login success!",
                                     Toast.LENGTH_SHORT).show();
-
+                                            showHomeActivity();
 
                         } else {
                             // If sign in fails, display a message to the user.
@@ -85,5 +87,10 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    private void showHomeActivity() {
+        Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+        startActivity(intent);
+        finish();
+    }
 
 }

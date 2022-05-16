@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -13,6 +14,8 @@ import com.example.musicapp.fragments.CartFragment;
 import com.example.musicapp.fragments.CategoryFragment;
 import com.example.musicapp.fragments.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.yarolegovich.slidingrootnav.SlidingRootNavBuilder;
 
 public class HomeActivity extends AppCompatActivity {
@@ -24,7 +27,17 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-       navigationView = findViewById(R.id.bottom_navigation);
+        FirebaseAuth auth=FirebaseAuth.getInstance();
+        FirebaseUser currentUser=auth.getCurrentUser();
+
+        if(currentUser==null){
+            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+            startActivity(intent);
+            finish();
+            return;
+        }
+
+        navigationView = findViewById(R.id.bottom_navigation);
         navigationView.setOnNavigationItemSelectedListener(navListener);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.tool_bar);
@@ -35,10 +48,6 @@ public class HomeActivity extends AppCompatActivity {
                 .withMenuOpened(false)
                 .withMenuLayout(R.layout.menu_left_drawer)
                 .inject();
-
-
-
-
     }
 
 

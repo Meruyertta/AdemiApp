@@ -203,6 +203,9 @@ public class HomeActivity extends AppCompatActivity{
                 case R.id.nav_category:
                     selectedFragment = new CategoryFragment();
                     break;
+                case R.id.nav_profile:
+                    selectedFragment = new ProfileFragment();
+                    break;
             }
             getSupportFragmentManager()
                     .beginTransaction()

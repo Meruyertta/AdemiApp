@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="id_activityScreenTitles">
+        <item></item>
+        <item>Home</item>
+        <item>Profile</item>
+        <item>Messages</item>
+        <item>Help</item>
+        <item>Settings</item>
+    </string-array>
+
+    <array name="id_activityScreenIcons">
+        <item></item>
+        <item>@drawable/ic_akar_icons_home</item>
+        <item>@drawable/ic_message</item>
+        <item>@drawable/ic_message</item>
+        <item>@drawable/ic_message</item>
+        <item>@drawable/ic_message</item>
+    </array>
+</resources>

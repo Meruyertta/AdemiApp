@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,11 +12,14 @@
 
 
 <!--    images -->
-<androidx.viewpager.widget.ViewPager
+<RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/viewPagerMain"
-    />
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerMain"
+        android:layout_width="match_parent"
+        android:layout_height="350dp" />
 
 
 
@@ -29,131 +32,173 @@
         android:layout_margin="20dp"/>
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/login_shape"
+        android:orientation="vertical"
+        android:padding="35sp">
+
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gideon_roman"
+            android:text="@string/productDetailName"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+
+        <!--    Conc choice and price row-->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="350dp"
-            android:background="@drawable/login_shape"
-            android:orientation="vertical"
-            android:padding="35sp">
-
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/product_category_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gideon_roman"
+                android:text="@string/productCategoryName"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:background="@drawable/buttonred_corner"
+                android:padding="10dp"/>
 
             <TextView
-                android:id="@+id/product_name"
+                android:layout_marginTop="10dp"
+                android:id="@+id/product_price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/gideon_roman"
-                android:text="@string/productDetailName"
-                android:textColor="@color/black"
-                android:textSize="30sp" />
-
-
-            <!--    Conc choice and price row-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_marginTop="10dp"
-                    android:id="@+id/product_category_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/gideon_roman"
-                    android:text="@string/productCategoryName"
-                    android:textColor="@color/white"
-                    android:textSize="15sp"
-                    android:background="@drawable/buttonred_corner"
-                    android:padding="10dp"/>
-
-                <TextView
-                    android:layout_marginTop="10dp"
-                    android:id="@+id/product_price"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/gideon_roman"
-                    android:text="@string/productPrice"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:padding="10dp"
-                    android:gravity="end"/>
-            </LinearLayout>
-
-            <!--    Description-->
-            <TextView
-                android:id="@+id/product_description"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/gideon_roman"
-                android:text="@string/Lorem"
-                android:textColor="@color/black"
-                android:textSize="10sp"
-                android:layout_marginTop="30dp"/>
-
-            <!--  Color  -->
-            <TextView
-                android:id="@+id/product_color"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/gideon_roman"
-                android:text="Color:"
+                android:text="@string/productPrice"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                android:layout_marginTop="30dp"/>
+                android:padding="10dp"
+                android:gravity="end"/>
+        </LinearLayout>
 
-            <RelativeLayout
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/product_details_color" />
+        <!--    Description-->
+        <TextView
+            android:id="@+id/product_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gideon_roman"
+            android:text="@string/Lorem"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:layout_marginTop="30dp"/>
 
-<!--            Size-->
-<!--            <TextView-->
-<!--                android:id="@+id/product_size"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:fontFamily="@font/gideon_roman"-->
-<!--                android:text="Size:"-->
-<!--                android:textColor="@color/black"-->
-<!--                android:textSize="20sp"-->
-<!--                android:layout_marginTop="30dp"/>-->
+        <!--  Color  -->
+        <TextView
+            android:id="@+id/product_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gideon_roman"
+            android:text="Color:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"/>
 
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="40dp"-->
-<!--                android:layout_margin="6dp"-->
-<!--                android:orientation="horizontal"-->
-<!--                android:background="@drawable/navbar_corners"-->
-<!--                android:elevation="5dp">-->
-<!--                <TextView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:fontFamily="@font/gideon_roman"-->
-<!--                    android:text="Here will be sizes)):"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="20sp"-->
-<!--                    android:gravity="center"/>-->
-<!--            </LinearLayout>-->
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/product_details_color" />
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="30dp"
-                            android:orientation="horizontal">
-                            <Button
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/buttonred_corner"
-                                android:elevation="2dp"
-                                android:text="Add to cart:"
-                                android:textColor="@color/white"
-                                android:gravity="center"
-                                android:fontFamily="@font/josefinsanslight"/>
+        <!--            Size-->
+                    <TextView
+                        android:id="@+id/product_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gideon_roman"
+                        android:text="Size:"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginTop="30dp"/>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="6dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/navbar_corners"
+                        android:elevation="5dp"
+                        android:gravity="center"
+                       >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gideon_roman"
+                            android:text="XS"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:layout_marginRight="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gideon_roman"
+                            android:text="S"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:layout_marginRight="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gideon_roman"
+                            android:text="M"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/buttonred_corner"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gideon_roman"
+                            android:text="L"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:layout_marginRight="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gideon_roman"
+                            android:text="XL"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:layout_marginRight="20dp"/>
+                    </LinearLayout>
 
-                        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/buttonred_corner"
+                android:elevation="2dp"
+                android:text="Add to cart:"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:fontFamily="@font/josefinsanslight"/>
+
 
         </LinearLayout>
 
-
+    </LinearLayout>
 
 
 
@@ -163,3 +208,9 @@
 
 
 </RelativeLayout>
+
+
+
+
+
+</ScrollView>

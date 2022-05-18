@@ -1,5 +1,6 @@
 package com.example.musicapp.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,8 +10,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.musicapp.R;
+import com.example.musicapp.SelectListener;
 import com.example.musicapp.recycleviews.ModelCategoryFragment;
 import com.example.musicapp.recycleviews.ModelTag;
 import com.example.musicapp.recycleviews.RecycleViewCategoryFragmentAdapter;
@@ -19,7 +22,7 @@ import com.example.musicapp.recycleviews.RecycleViewHomeTagsAdapter;
 import java.util.ArrayList;
 
 
-public class CategoryFragment extends Fragment {
+public class CategoryFragment extends Fragment implements SelectListener {
 
 
     // TODO: Rename parameter arguments, choose names that match
@@ -91,9 +94,23 @@ public class CategoryFragment extends Fragment {
         dataholderCatFr.add(cat8);
         ModelCategoryFragment cat9 = new ModelCategoryFragment("Student Discount");
         dataholderCatFr.add(cat9);
-        recyclerViewTag.setAdapter(new RecycleViewCategoryFragmentAdapter(dataholderCatFr));
+        recyclerViewTag.setAdapter(new RecycleViewCategoryFragmentAdapter(dataholderCatFr, this));
+
+
+
 
 
         return view;
+    }
+
+
+    @Override
+    public void onItemClicked(ModelCategoryFragment modelCategory) {
+        Toast.makeText(getActivity(), modelCategory.getText(), Toast.LENGTH_SHORT).show();
+        CategoryDetailsFragment nextFrag= new CategoryDetailsFragment();
+        getActivity().getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_container, nextFrag, "findThisFragment")
+                .addToBackStack(null)
+                .commit();
     }
 }

@@ -3,16 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProjects/MusicApp/app/src/main/res/layout/fragment_category.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/MusicApp/app/src/main/res/layout/item_category_fragment.xml" value="0.1" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/buttonred_corner.xml" value="0.2475" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/buttonwhite_corner.xml" value="0.2475" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/fontwhite.xml" value="0.104" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/ic_akar_icons_home.xml" value="0.1845" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/ic_back_black.xml" value="0.1" />
-        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/ic_baseline_delete_outline_24.xml" value="0.1885" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/ic_carbon_search_locate.xml" value="0.1845" />
-        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/ic_help.xml" value="0.138" />
-        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/ic_message.xml" value="0.138" />
-        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/ic_settings.xml" value="0.138" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/images.xml" value="0.2475" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/inputforms_corner.xml" value="0.1725" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/item_selector.xml" value="0.1845" />
@@ -23,14 +21,12 @@
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/activity_home.xml" value="0.128" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/activity_product_detail.xml" value="0.18981481481481483" />
+        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/activity_product_detail.xml" value="0.2" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/activity_register.xml" value="0.21784420289855072" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/fragment_cart.xml" value="0.17395833333333333" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/fragment_category.xml" value="0.17395833333333333" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/fragment_category_details.xml" value="0.11015412511332728" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/fragment_home.xml" value="0.12315270935960591" />
-        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/fragment_profile.xml" value="0.18981481481481483" />
-        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/item_cart_fragment.xml" value="0.20863616930312098" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/item_category_fragment.xml" value="0.176" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/item_drawer_rv.xml" value="0.20863616930312098" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/item_home_categories_big.xml" value="0.264" />

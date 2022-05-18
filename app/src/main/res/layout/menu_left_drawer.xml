@@ -136,6 +136,18 @@
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/josefinsanslight"
+            android:text="Go to home ->"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"/>
+
+
         </LinearLayout>
 
 

@@ -19,11 +19,11 @@
         android:background="@color/white">
 
         <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_bar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:id="@+id/tool_bar"
-            app:titleTextColor="@color/white"
-            app:navigationIcon="@drawable/ic_drawer" />
+            app:navigationIcon="@drawable/ic_drawer"
+            app:titleTextColor="@color/white" />
 
         <TextView
             android:id="@+id/project"

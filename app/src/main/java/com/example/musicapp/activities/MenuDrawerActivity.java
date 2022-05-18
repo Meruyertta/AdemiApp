@@ -31,6 +31,7 @@ public class MenuDrawerActivity extends AppCompatActivity {
 
     TextView tvName, tvEmail;
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +53,17 @@ public class MenuDrawerActivity extends AppCompatActivity {
             }
         });
 
+
+        TextView home = findViewById(R.id.home);
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d("I home", "Going home!");
+                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                startActivity(intent);
+            }
+        });
         reference = FirebaseDatabase.getInstance().getReference("users");
         userId=user.getUid();
 

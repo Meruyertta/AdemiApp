@@ -13,4 +13,30 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+<!--    Light mode   -->
+<!--    Background   -->
+    <style name="SCREEN">
+        <item name="android:background">@color/white</item>
+    </style>
+<!--    Text   -->
+    <style name="TEXT">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--    SECONDARY TEXT   -->
+    <style name="SECONDARYTEXT">
+        <item name="android:textColor">@color/mainRed</item>
+    </style>
+
+    <!--    Nav   -->
+    <style name="NAVBARBACK">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="MySwitchStyle" parent = "Widget.AppCompat.CompoundButton.Switch">
+        <item name="thumbTint">@color/switcher_style</item>
+    </style>
+
+
 </resources>

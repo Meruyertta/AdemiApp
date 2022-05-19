@@ -4,6 +4,7 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.ColorRes;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
@@ -11,16 +12,22 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.UiModeManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Switch;
 
 import com.example.musicapp.R;
 import com.example.musicapp.fragments.CartFragment;
+import com.example.musicapp.fragments.CategoryDetailsFragment;
 import com.example.musicapp.fragments.CategoryFragment;
 import com.example.musicapp.fragments.HomeFragment;
 import com.example.musicapp.fragments.ProfileFragment;
@@ -52,11 +59,55 @@ public class HomeActivity extends AppCompatActivity{
     private Drawable[] screenIcons;
 
     private SlidingRootNav slidingRootNav;
+    private UiModeManager uiModeManager;
+
+
+    //switcher
+    Switch switch1;
+    boolean nightMode;
+    SharedPreferences sharedPreferences;
+    SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        //Dark and light mode
+        switch1 = findViewById(R.id.switcher);
+
+        sharedPreferences = getSharedPreferences("MODE", Context.MODE_PRIVATE);
+        nightMode = sharedPreferences.getBoolean("night", false);
+
+        if(nightMode){
+            switch1.setChecked(true);
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        }
+
+        switch1.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                boolean checked = ((Switch) v).isChecked();
+                if(checked){
+                    Log.d("Checked", "true");
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                    editor = sharedPreferences.edit();
+                    editor.putBoolean("night", false);
+                }else{
+                    Log.d("Checked", "false");
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                    editor = sharedPreferences.edit();
+                    editor.putBoolean("night", true);
+                }
+                editor.apply();
+            }
+        });
+
+
+
+
+
 
         FirebaseAuth auth=FirebaseAuth.getInstance();
         FirebaseUser currentUser=auth.getCurrentUser();
@@ -75,12 +126,14 @@ public class HomeActivity extends AppCompatActivity{
         Toolbar toolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
 
-        new SlidingRootNavBuilder(this)
-                .withToolbarMenuToggle(toolbar)
-                .withMenuOpened(false)
-                .withMenuLayout(R.layout.menu_left_drawer)
-                .inject();
-//
+//        new SlidingRootNavBuilder(this)
+//                .withToolbarMenuToggle(toolbar)
+//                .withMenuOpened(false)
+//                .withMenuLayout(R.layout.menu_left_drawer)
+//                .inject();
+
+
+
 //        slidingRootNav = new SlidingRootNavBuilder(this)
 //                .withDragDistance(180)
 //                .withRootViewScale(0.75f)
@@ -184,8 +237,16 @@ public class HomeActivity extends AppCompatActivity{
 //       transaction.addToBackStack(null);
 //       transaction.commit();
     }
-    
 
+
+
+    //    public void NightModeON(View view){
+//        uiModeManager.setNightMode(UiModeManager.MODE_NIGHT_YES);
+//    }
+//
+//    public void NightModeOFF(View view){
+//        uiModeManager.setNightMode(UiModeManager.MODE_NIGHT_NO);
+//    }
 
     //Navbar bottom
     private BottomNavigationView.OnNavigationItemSelectedListener navListener = new BottomNavigationView.OnNavigationItemSelectedListener() {

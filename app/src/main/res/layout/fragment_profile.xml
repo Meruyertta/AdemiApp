@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.ProfileFragment"
-    >
+    style="@style/SCREEN">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,8 +15,9 @@
         android:paddingRight="20dp"
         android:paddingBottom="35dp"
         android:gravity="center"
-        android:background="@drawable/buttonwhite_corner"
-        android:elevation="3dp">
+        android:elevation="3dp"
+        style="@style/SCREEN"
+        >
 
         <ImageView
             android:id="@+id/imageView"
@@ -30,7 +31,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/gideon_roman"
             android:text="Name"
-            android:textColor="@color/black"
+            style="@style/TEXT"
             android:textSize="20sp"
             android:layout_marginTop="30dp"/>
 
@@ -40,19 +41,33 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/josefinsanslight"
                 android:text="exapmle@gmail.com"
-                android:textColor="@color/mainRed"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                style="@style/SECONDARYTEXT"/>
 
-        <TextView
-            android:id="@+id/logout"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/gideon_roman"
-            android:text="Log out"
-            android:gravity="end"
-            android:textColor="@color/mainRed"
-            android:textSize="20sp"
-            android:layout_marginTop="15dp"/>
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+<!--            <Switch-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/switcher"-->
+<!--                android:gravity="start" />-->
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gideon_roman"
+                android:text="Log out"
+                android:gravity="end"
+                android:textColor="@color/mainRed"
+                android:textSize="20sp"
+                />
+
+
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -80,7 +95,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/josefinsanslight"
                 android:text="Messages"
-                android:textColor="@color/mainRed"
+                style="@style/SECONDARYTEXT"
                 android:textSize="25sp"
                 android:layout_marginLeft="5dp"/>
         </LinearLayout>
@@ -102,7 +117,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/josefinsanslight"
                 android:text="Help"
-                android:textColor="@color/mainRed"
+                style="@style/SECONDARYTEXT"
                 android:textSize="20sp"
                 android:layout_marginLeft="5dp"/>
         </LinearLayout>
@@ -121,7 +136,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/josefinsanslight"
                 android:text="Settings"
-                android:textColor="@color/mainRed"
+                style="@style/SECONDARYTEXT"
                 android:textSize="20sp"
                 android:layout_marginLeft="5dp"/>
         </LinearLayout>

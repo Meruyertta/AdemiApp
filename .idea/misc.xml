@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable-v21/app_widget_background.xml" value="0.104" />
+        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable-v21/app_widget_inner_view_background.xml" value="0.104" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/buttonred_corner.xml" value="0.2475" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/buttonwhite_corner.xml" value="0.2475" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/drawable/fontwhite.xml" value="0.104" />
@@ -40,7 +42,11 @@
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/item_image_slider_details.xml" value="0.13168020521590423" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/menu_drawer.xml" value="0.20863616930312098" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/menu_left_drawer.xml" value="0.25416666666666665" />
+        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/new_app_widget.xml" value="0.16799999999999998" />
+        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/new_app_widget_configure.xml" value="0.10196406184705391" />
+        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/layout/widget.xml" value="0.14709569577935647" />
         <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/menu/navbar_item_menu.xml" value="0.17604166666666668" />
+        <entry key="..\:/Ap/musicAppGit/MusicApp/app/src/main/res/xml/widgetprovider.xml" value="0.14709569577935647" />
       </map>
     </option>
   </component>

@@ -22,4 +22,7 @@
     <string name="Lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod diam in condimentum suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appwidget_text">App widget</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
 </resources>

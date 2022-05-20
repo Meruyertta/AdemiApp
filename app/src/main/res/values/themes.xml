@@ -14,12 +14,12 @@
         <!-- Customize your theme here. -->
     </style>
 
-<!--    Light mode   -->
-<!--    Background   -->
+    <!--    Light mode   -->
+    <!--    Background   -->
     <style name="SCREEN">
         <item name="android:background">@color/white</item>
     </style>
-<!--    Text   -->
+    <!--    Text   -->
     <style name="TEXT">
         <item name="android:textColor">@color/black</item>
     </style>
@@ -34,8 +34,23 @@
         <item name="android:background">@color/white</item>
     </style>
 
-    <style name="MySwitchStyle" parent = "Widget.AppCompat.CompoundButton.Switch">
+    <style name="MySwitchStyle" parent="Widget.AppCompat.CompoundButton.Switch">
         <item name="thumbTint">@color/switcher_style</item>
+    </style>
+
+    <style name="Theme.MusicApp.AppWidgetContainerParent" parent="@android:style/Theme.DeviceDefault">
+        <!-- Radius of the outer bound of widgets to make the rounded corners -->
+        <item name="appWidgetRadius">16dp</item>
+        <!--
+        Radius of the inner view's bound of widgets to make the rounded corners.
+        It needs to be 8dp or less than the value of appWidgetRadius
+        -->
+        <item name="appWidgetInnerRadius">8dp</item>
+    </style>
+
+    <style name="Theme.MusicApp.AppWidgetContainer" parent="Theme.MusicApp.AppWidgetContainerParent">
+        <!-- Apply padding to avoid the content of the widget colliding with the rounded corners -->
+        <item name="appWidgetPadding">16dp</item>
     </style>
 
 

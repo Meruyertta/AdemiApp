@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import com.example.musicapp.R;
 import com.example.musicapp.recycleviews.ModelProduct;
 import com.example.musicapp.recycleviews.RecycleViewHomeProductAdapter;
+import com.example.musicapp.recycleviews.SelectListener2;
 
 import java.util.ArrayList;
 
@@ -21,7 +22,7 @@ import java.util.ArrayList;
  * Use the {@link CategoryDetailsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CategoryDetailsFragment extends Fragment {
+public class CategoryDetailsFragment extends Fragment implements SelectListener2 {
     ArrayList<ModelProduct> dataholderProduct;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -82,11 +83,16 @@ public class CategoryDetailsFragment extends Fragment {
         dataholderProduct.add(product3);
         ModelProduct product4 = new ModelProduct(R.drawable.bagproduct,"Straw Beach Bag", "$ 24.99");
         dataholderProduct.add(product4);
-        recyclerViewProduct.setAdapter(new RecycleViewHomeProductAdapter(dataholderProduct));
+        recyclerViewProduct.setAdapter(new RecycleViewHomeProductAdapter(dataholderProduct, this));
 
 
         return view;
 
+
+    }
+
+    @Override
+    public void onItemClicked(ModelProduct modelProduct) {
 
     }
 }

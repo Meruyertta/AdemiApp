@@ -1,5 +1,6 @@
 package com.example.musicapp.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,17 +8,23 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+import com.example.musicapp.SelectListener;
 
+import com.example.musicapp.activities.ProductDetailActivity;
 import com.example.musicapp.recycleviews.Model;
 import com.example.musicapp.R;
+import com.example.musicapp.recycleviews.ModelCategoryFragment;
 import com.example.musicapp.recycleviews.ModelProduct;
 import com.example.musicapp.recycleviews.ModelTag;
 import com.example.musicapp.recycleviews.RecycleViewHomeProductAdapter;
 import com.example.musicapp.recycleviews.RecycleViewHomeTagsAdapter;
 import com.example.musicapp.recycleviews.RecyclerViewAdapter;
+import com.example.musicapp.recycleviews.SelectListener2;
 
 import java.util.ArrayList;
 
@@ -27,7 +34,7 @@ import java.util.ArrayList;
  * create an instance of this fragment.
  */
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment implements SelectListener2{
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -131,10 +138,23 @@ public class HomeFragment extends Fragment {
         dataholderProduct.add(product2);
         ModelProduct product3 = new ModelProduct(R.drawable.womanc,"Ankle-length Pants", "$ 29.99");
         dataholderProduct.add(product3);
-        recyclerViewProduct.setAdapter(new RecycleViewHomeProductAdapter(dataholderProduct));
+        recyclerViewProduct.setAdapter(new RecycleViewHomeProductAdapter(dataholderProduct, this));
+
 
 
         return view;
+    }
+
+
+
+
+    @Override
+    public void onItemClicked(ModelProduct modelProduct) {
+      Toast.makeText(getActivity(), modelProduct.getName(), Toast.LENGTH_SHORT).show();
+        Log.v("GO TO DETAILS","ON ITEM CLICKED");
+        Intent newIntent=new Intent();
+        newIntent.setClass(getActivity(),ProductDetailActivity.class);
+        getActivity().startActivity(newIntent);
     }
 }
 

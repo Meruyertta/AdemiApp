@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.musicapp.R;
 import com.example.musicapp.SelectListener;
+import com.example.musicapp.recycleviews.SelectListener2;
 
 
 import java.util.ArrayList;
@@ -21,6 +22,7 @@ import java.util.ArrayList;
 public class RecycleViewCartFragmentAdapter extends RecyclerView.Adapter<RecycleViewCartFragmentAdapter.myviewholder>{
 
     ArrayList<ModelCartFragment> dataholderCart;
+    SelectListener2 selectListener2;
 
     public RecycleViewCartFragmentAdapter(ArrayList<ModelCartFragment> dataholderCart) {
         this.dataholderCart = dataholderCart;

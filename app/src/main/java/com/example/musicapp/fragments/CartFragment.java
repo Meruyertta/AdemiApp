@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.musicapp.R;
+import com.example.musicapp.recycleviews.SelectListener2;
 import com.example.musicapp.recycleviews.shoppingCart.ModelCartFragment;
 import com.example.musicapp.recycleviews.shoppingCart.RecycleViewCartFragmentAdapter;
 
@@ -22,7 +23,7 @@ import java.util.ArrayList;
  * Use the {@link CartFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CartFragment extends Fragment {
+public class CartFragment extends Fragment  {
     ArrayList<ModelCartFragment> dataholderCart;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -84,4 +85,7 @@ public class CartFragment extends Fragment {
 
         return view;
     }
+
+
+
 }

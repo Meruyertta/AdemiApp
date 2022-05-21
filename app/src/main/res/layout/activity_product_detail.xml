@@ -186,6 +186,7 @@
             android:layout_marginTop="30dp"
             android:orientation="horizontal">
             <Button
+                android:id="@+id/addToCard"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/buttonred_corner"

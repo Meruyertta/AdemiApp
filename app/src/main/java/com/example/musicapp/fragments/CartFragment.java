@@ -78,8 +78,8 @@ public class CartFragment extends Fragment  {
         dataholderCart.add(product1);
         ModelCartFragment product2 = new ModelCartFragment(R.drawable.pantsproduct,"Ankle-length Pants", "$ 29.99");
         dataholderCart.add(product2);
-        ModelCartFragment product3 = new ModelCartFragment(R.drawable.womanc,"Ankle-length Pants", "$ 29.99");
-        dataholderCart.add(product3);
+//        ModelCartFragment product3 = new ModelCartFragment(R.drawable.womanc,"Ankle-length Pants", "$ 29.99");
+//        dataholderCart.add(product3);
         recyclerViewCart.setAdapter(new RecycleViewCartFragmentAdapter(dataholderCart));
 
 

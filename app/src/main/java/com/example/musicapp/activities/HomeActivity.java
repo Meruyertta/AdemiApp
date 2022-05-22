@@ -48,12 +48,6 @@ public class HomeActivity extends AppCompatActivity{
 
     BottomNavigationView navigationView;
 
-    private static final int POS_HOME = 0;
-    private static final int POS_MESSAGES = 0;
-    private static final int POS_PROFILE = 0;
-    private static final int POS_HELP = 0;
-    private static final int POS_SETTINGS = 0;
-    private static final int POS_LOGOUT = 0;
 
     private String[] screenTitles;
     private Drawable[] screenIcons;

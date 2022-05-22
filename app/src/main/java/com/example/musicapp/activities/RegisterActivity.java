@@ -98,10 +98,10 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
 
-//    public void gotohome(View view) {
-//        Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
-//        startActivity(intent);
-//    }
+    public void gotologin(View view) {
+        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+        startActivity(intent);
+    }
 
     private void showLoginActivity() {
         Intent intent = new Intent(getApplicationContext(), LoginActivity.class);

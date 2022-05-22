@@ -122,6 +122,7 @@
             android:layout_width="60dp"
             android:layout_height="20dp"
             android:text="Sign In"
+            android:onClick="gotologin"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/textView"

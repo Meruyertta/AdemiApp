@@ -104,6 +104,7 @@
             android:text="Sign In"
             android:textSize="16sp"
             android:textStyle="bold"
+            android:onClick="register"
             app:layout_constraintBottom_toBottomOf="@+id/textView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.183"
